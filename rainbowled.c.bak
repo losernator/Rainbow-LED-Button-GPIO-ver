@@ -217,10 +217,10 @@ void funBlink(mode) {
 		funAllLightOff(1);
 	}
 	if( mode == 2 )	{	// blink2 with RGB
+
 		digitalWrite(pin4,on);
 		digitalWrite(pin5,on);
 		digitalWrite(pin6,on);
-		digitalWrite(pin7,on);
 		digitalWrite(pinr,0);
 		digitalWrite(ping,1);
 		digitalWrite(pinb,1);
@@ -230,7 +230,6 @@ void funBlink(mode) {
 		digitalWrite(pin1,on);
 		digitalWrite(pin2,on);
 		digitalWrite(pin3,on);
-		digitalWrite(pin8,on);
 		digitalWrite(pinr,1);
 		digitalWrite(ping,1);
 		digitalWrite(pinb,0);
@@ -240,7 +239,6 @@ void funBlink(mode) {
 		digitalWrite(pin4,on);
 		digitalWrite(pin5,on);
 		digitalWrite(pin6,on);
-		digitalWrite(pin7,on);
 		digitalWrite(pinr,1);
 		digitalWrite(ping,0);
 		digitalWrite(pinb,1);
@@ -250,7 +248,6 @@ void funBlink(mode) {
 		digitalWrite(pin1,on);
 		digitalWrite(pin2,on);
 		digitalWrite(pin3,on);
-		digitalWrite(pin8,on);
 		digitalWrite(pinr,0);
 		digitalWrite(ping,1);
 		digitalWrite(pinb,1);
