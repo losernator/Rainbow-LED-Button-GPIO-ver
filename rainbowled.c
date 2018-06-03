@@ -18,8 +18,8 @@
  * cd rainbowLED
  * apt-get install wiringpi
  * sudo gcc rainbowled.c -o rainbowled -lwiringPi -lpthread
- *
- *
+ * sudo nano /opt/retropie/configs/all/autostart.sh
+ * - add line with "/home/pi/rainbowLED/rainbowled /dev/input/js0 & "
  *
  * - complie -
  * sudo gcc rainbowled.c -o rainbowled -lwiringPi -lpthread
