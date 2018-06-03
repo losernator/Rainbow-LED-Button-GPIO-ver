@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  *  Rainbow LED Button ( GPIO ver )
  *  Author		 : sana2dang ( fly9p ) - sana2dang@naver.com / sana2dang@gmail.com
  *  Creation Date: 2017 - 04 - 01
@@ -8,11 +8,19 @@
  * - Reference -
  * wiringPi
  * http://wiringpi.com/the-gpio-utility/
- * apt-get install wiringPi
+ * 
  * 
  * jstest
  * https://github.com/flosse/linuxconsole/blob/master/utils/jstest.c
  * 
+ * - install -
+ * git clone https://github.com/losernator/rainbowLED.git
+ * cd rainbowLED
+ * apt-get install wiringpi
+ * sudo gcc rainbowled.c -o rainbowled -lwiringPi -lpthread
+ *
+ *
+ *
  * - complie -
  * sudo gcc rainbowled.c -o rainbowled -lwiringPi -lpthread
  * 
@@ -76,7 +84,7 @@ int on = 1; //LED on,off state
 int off = 0;
 int isRGB = 0; //RGB LED state
 
-void funAllLightOn(mode)
+void funAllLightOn(int mode)
 {
 	if( mode == 0 )		// ALL LED ON
 	{
@@ -106,7 +114,7 @@ void funAllLightOn(mode)
 	}
 }
 
-void funAllLightOff(mode)
+void funAllLightOff(int mode)
 {
 	if( mode == 0 )		// ALL LED OFF
 	{
@@ -135,7 +143,7 @@ void funAllLightOff(mode)
 	}
 }
 
-void funRotation(mode) {
+void funRotation(int mode) {
 	if( mode == 0 )	{	// rotaition clockwise
 		digitalWrite(pin4,on);
 		delay(30);
@@ -177,7 +185,7 @@ void funRotation(mode) {
 		funAllLightOff(1);
 	}
 }
-void funBlink(mode) {
+void funBlink(int mode) {
 	if( mode == 0 )	{	// blink with RGB
 		funAllLightOn(1);
 		digitalWrite(pinr,0);
