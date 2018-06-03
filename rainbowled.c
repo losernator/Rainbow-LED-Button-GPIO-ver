@@ -17,7 +17,7 @@
  * sudo gcc rainbowled.c -o rainbowled -lwiringPi -lpthread
  * 
  * 
- * /home/pi/rainbowLEd/rainbowled /dev/input/js0 &
+ * /home/pi/rainbowLED/rainbowled /dev/input/js0 &
  * 
  */
 
