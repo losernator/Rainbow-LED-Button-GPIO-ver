@@ -614,7 +614,7 @@ int main (int argc, char **argv)
 	if (argc < 2 || argc > 5 )
 	{
 		puts("");
-		puts("Usage: dimmedledbtn <#joystick> [dimming delay] [button mapping type] [chargeshot] [invert]");
+		puts("Usage: dimmedledbtn <#joystick> [dimming delay] [button mapping type] [chargeshot]");
 		puts("");
 		puts("[dimming delay] : lower is faster dimming speed, default:3");
 		puts("[button mapping type] : 'ab' or 'ba', default:ba");
