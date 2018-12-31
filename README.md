@@ -2,6 +2,9 @@
 Application for Arcade LED button control using Raspberry Pi GPIO.
 Works with Gpio joystick driver ( https://github.com/recalbox/mk_arcade_joystick_rpi ) and Retropie.
 
+## Video
+[![LEDVIDEO](https://i.ytimg.com/vi/PyplqCNt8OQ/1.jpg?time=1546273181329)](https://youtu.be/PyplqCNt8OQ)
+
 ## Hardware
 * Raspberry Pi GPIO
 * 3v/5v LED or LED Button
@@ -17,7 +20,6 @@ Works with Gpio joystick driver ( https://github.com/recalbox/mk_arcade_joystick
 ![GPIO](/Manual/rainbowled01.png)
 ![GPIO](/Manual/rainbowled03.png)
 ![GPIO](/Manual/rainbowled04.jpg)
-![GPIO](/Manual/rainbowled05.jpg)
 
 ## Install
 first install rainbowLED
@@ -53,5 +55,3 @@ Usage: dimmedledbtn <#joystick> [dimming delay] [button mapping type] [chargesho
 [chargeshot] : 'charge' or 'nocharge', default:charge
 </code></pre>
 
-## Video
-[![LEDVIDEO](https://i.ytimg.com/vi/PyplqCNt8OQ/1.jpg?time=1546273181329)](https://youtu.be/PyplqCNt8OQ)
