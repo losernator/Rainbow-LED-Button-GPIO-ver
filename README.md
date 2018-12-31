@@ -34,7 +34,7 @@ second, make it run on start with retropie
 <pre><code>sudo nano /opt/retropie/configs/all/autostart.sh
 </code></pre>
 a. and then add this on top
-<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0
+<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 &
 </code></pre>
 
 if you want chage button order like this
@@ -44,7 +44,7 @@ if you want chage button order like this
   A B R
 </code></pre>
 then change like this
-<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 4 ab
+<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 ab &
 </code></pre>
 
 ## Configuration
