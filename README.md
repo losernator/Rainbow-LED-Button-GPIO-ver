@@ -1,9 +1,57 @@
-# Rainbow-LED-Button-GPIO-ver
+# RainbowLED
+Application for Arcade LED button control using Raspberry Pi GPIO.
+Works with Gpio joystick driver ( https://github.com/recalbox/mk_arcade_joystick_rpi ) and Retropie.
 
+## Hardware
+* Raspberry Pi GPIO
+* 3v/5v LED or LED Button
+* cables for LED
+* default button oder is
+<pre><code> SE ST
 
-![Alt text](https://github.com/sana2dang/Rainbow-LED-Button-GPIO-ver/blob/master/Manual/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C1.PNG)
-![Alt text](https://github.com/sana2dang/Rainbow-LED-Button-GPIO-ver/blob/master/Manual/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C2.PNG)
-![Alt text](https://github.com/sana2dang/Rainbow-LED-Button-GPIO-ver/blob/master/Manual/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C3.PNG)
-![Alt text](https://github.com/sana2dang/Rainbow-LED-Button-GPIO-ver/blob/master/Manual/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C4.PNG)
-![Alt text](https://github.com/sana2dang/Rainbow-LED-Button-GPIO-ver/blob/master/Manual/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C5.PNG)
-![Alt text](https://github.com/sana2dang/Rainbow-LED-Button-GPIO-ver/blob/master/Manual/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C6.PNG)
+   Y X L
+  B A R
+</code></pre>
+
+![LED](/Manual/rainbowled02.png)
+![GPIO](/Manual/rainbowled01.png)
+![GPIO](/Manual/rainbowled03.png)
+![GPIO](/Manual/rainbowled04.jpg)
+![GPIO](/Manual/rainbowled05.jpg)
+
+## Install
+first install rainbowLED
+<pre><code>cd /home/pi
+apt-get install wiringpi
+git clone https://github.com/losernator/rainbowLED.git
+cd /home/pi/rainbowLED/
+sudo chmod 755 rainbowledbtn
+sudo chmod 755 dimmedledbtn
+</code></pre>
+second, make it run on start with retropie
+<pre><code>sudo nano /opt/retropie/configs/all/autostart.sh
+</code></pre>
+a. and then add this on top
+<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0
+</code></pre>
+
+if you want chage button order like this
+<pre><code> SE ST
+
+   X Y L
+  A B R
+</code></pre>
+then change like this
+<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 4 ab
+</code></pre>
+
+## Configuration
+<pre><code>
+Usage: dimmedledbtn <#joystick> [dimming delay] [button mapping type] [chargeshot]
+[dimming delay] : lower is faster dimming speed, default:3
+[button mapping type] : 'ab' or 'ba', default:ba
+[chargeshot] : 'charge' or 'nocharge', default:charge
+</code></pre>
+
+## Video
+[![LEDVIDEO](https://i.ytimg.com/vi/PyplqCNt8OQ/1.jpg?time=1546273181329)](https://youtu.be/PyplqCNt8OQ)
