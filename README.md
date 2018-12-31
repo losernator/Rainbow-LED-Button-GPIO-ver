@@ -3,7 +3,7 @@ Application for Arcade LED button control using Raspberry Pi GPIO.
 Works with Gpio joystick driver ( https://github.com/recalbox/mk_arcade_joystick_rpi ) and Retropie.
 
 ## Video
-[![LEDVIDEO](https://i.ytimg.com/vi/PyplqCNt8OQ/1.jpg?time=1546273181329)](https://youtu.be/PyplqCNt8OQ)
+[![LEDVIDEO](http://img.youtube.com/vi/PyplqCNt8OQ/0.jpg)](https://youtu.be/PyplqCNt8OQ)
 
 ## Hardware
 * Raspberry Pi GPIO
