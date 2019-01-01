@@ -24,7 +24,7 @@ Works with Gpio joystick driver ( https://github.com/recalbox/mk_arcade_joystick
 ## Install
 first install rainbowLED
 <pre><code>cd /home/pi
-apt-get install wiringpi
+sudo apt-get install wiringpi
 git clone https://github.com/losernator/rainbowLED.git
 cd /home/pi/rainbowLED/
 sudo chmod 755 rainbowledbtn
