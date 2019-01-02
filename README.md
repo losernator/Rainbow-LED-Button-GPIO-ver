@@ -37,13 +37,13 @@ a. and then add this on top
 <pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 &
 </code></pre>
 
-if you want chage button order like this
+if you want change button order like this
 <pre><code> SE ST
 
    X Y L
   A B R
 </code></pre>
-then change like this
+add 'ab' option
 <pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 ab &
 </code></pre>
 
