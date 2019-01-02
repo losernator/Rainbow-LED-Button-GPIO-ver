@@ -24,7 +24,7 @@ Works with Gpio joystick driver ( https://github.com/recalbox/mk_arcade_joystick
 ## Install
 first install rainbowLED
 <pre><code>cd /home/pi
-apt-get install wiringpi
+sudo apt-get install wiringpi
 git clone https://github.com/losernator/rainbowLED.git
 cd /home/pi/rainbowLED/
 sudo chmod 755 rainbowledbtn
@@ -34,17 +34,17 @@ second, make it run on start with retropie
 <pre><code>sudo nano /opt/retropie/configs/all/autostart.sh
 </code></pre>
 a. and then add this on top
-<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0
+<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 &
 </code></pre>
 
-if you want chage button order like this
+if you want change button order like this
 <pre><code> SE ST
 
    X Y L
   A B R
 </code></pre>
-then change like this
-<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 4 ab
+add 'ab' option
+<pre><code>/home/pi/rainbowLED/dimmedledbtn /dev/input/js0 ab &
 </code></pre>
 
 ## Configuration
